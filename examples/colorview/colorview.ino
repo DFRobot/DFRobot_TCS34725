@@ -26,7 +26,6 @@ void setup()
 void loop() {
   uint16_t clear, red, green, blue;
   tcs.getRGBC(&red, &green, &blue, &clear);
-  // turn off LED
   tcs.lock();  
   Serial.print("C:\t"); Serial.print(clear);
   Serial.print("\tR:\t"); Serial.print(red);
