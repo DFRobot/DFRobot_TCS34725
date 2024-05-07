@@ -6,17 +6,17 @@
  * @author      PengKaixing(kaixing.peng@dfrobot.com)
  * @version     V1.0.0
  * @date        2022-03-16
- * @url         https://github.com/DFRobot/DFRobot_TCS34725
+ * @url         https://github.com/DFRobot/DFRobot_TCS
  */
 #include "DFRobot_TCS34725.h"
 
-DFRobot_TCS34725 tcs = DFRobot_TCS34725(&Wire, TCS34725_ADDRESS,TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_4X);
+DFRobot_TCS34725 tcs = DFRobot_TCS34725(&Wire, TCS34725_ADDRESS,TCS34725_INTEGRATIONTIME_24MS, TCS34725_GAIN_1X);
 void setup() 
 {
   Serial.begin(115200);
   Serial.println("Color View Test!");
 
-  while(!tcs.begin())
+  while(tcs.begin() != 0)
   {
     Serial.println("No TCS34725 found ... check your connections");
     delay(1000);

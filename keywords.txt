@@ -6,7 +6,8 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-DFRobot_TCS34725	KEYWORD1	
+DFRobot_TCS34725    KEYWORD1
+DFRobot_TCS3400	KEYWORD1	
 
 #######################################
 # Methods and Functions (KEYWORD2)

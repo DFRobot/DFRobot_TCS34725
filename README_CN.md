@@ -1,4 +1,4 @@
-# DFRobot_TCS34725
+# DFRobot_TCS
 
 - [English Version](./README.md)
 
@@ -39,7 +39,7 @@ SKU：SEN0212
 
 	/**
 	 * @fn setIntegrationtime
-	 * @brief 设置TC34725的集成时间。
+	 * @brief 设置TC34725的积分时间。
 	 * @param it  积分时间
 	 */
 	void setIntegrationtime(eIntegrationTime_t it);
@@ -149,7 +149,8 @@ M0  |      √       |              |             |
 ## 历史
 
 - 2022/3/16 - 1.0.0 版本
+- 2024/4/24 - 1.0.1 版本
 
 ## 创作者
 
-Written by PengKaixing(kaixing.peng@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))
+Written by TangJie(jie.tang@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))

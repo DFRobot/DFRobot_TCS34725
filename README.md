@@ -1,4 +1,4 @@
-# DFRobot_TCS34725
+# DFRobot_TCS
 
 - [中文版](./README_CN.md)
 
@@ -152,7 +152,8 @@ M0  |      √       |              |             |
 ## History
 
 - 2022/3/16 - V1.0.0
+- 2024/4/24 - V1.0.1
 
 ## Credits
 
-Written by PengKaixing(kaixing.peng@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))
+Written by TangJie(jie.tang@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))

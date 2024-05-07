@@ -6,7 +6,7 @@
  * @author      PengKaixing(kaixing.peng@dfrobot.com)
  * @version     V1.0.0
  * @date        2022-03-16
- * @url         https://github.com/DFRobot/DFRobot_TCS34725
+ * @url         https://github.com/DFRobot/DFRobot_TCS
  */
 #include <DFRobot_TCS34725.h>
 #define interruptPin 3
@@ -27,10 +27,10 @@ void isr(void)
  */
 void getRawData_noDelay(uint16_t *r, uint16_t *g, uint16_t *b, uint16_t *c)
 {
-  *c = tcs.readRegword(TCS34725_CDATAL);
-  *r = tcs.readRegword(TCS34725_RDATAL);
-  *g = tcs.readRegword(TCS34725_GDATAL);
-  *b = tcs.readRegword(TCS34725_BDATAL);
+  *c = tcs.readRegword(TCS34_CDATAL);
+  *r = tcs.readRegword(TCS34_RDATAL);
+  *g = tcs.readRegword(TCS34_GDATAL);
+  *b = tcs.readRegword(TCS34_BDATAL);
 }
 
 void setup()
@@ -39,7 +39,7 @@ void setup()
   // TCS interrupt output is Active-LOW and Open-Drain
   pinMode(interruptPin, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(interruptPin), isr, FALLING);
-  while (!tcs.begin())
+  while (tcs.begin() != 0)
   {
     Serial.println("No TCS34725 found ... check your connections");
     delay(1000);
